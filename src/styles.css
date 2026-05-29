@@ -199,14 +199,6 @@ img {
   font-weight: 800;
 }
 
-.logo__image {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background:
-    linear-gradient(135deg, var(--color-primary), #8be8ec);
-}
-
 .logo__text {
   font-size: 1.2rem;
 }
