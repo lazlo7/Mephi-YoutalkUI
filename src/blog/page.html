@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Youtalk: Blogs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo logo" href="/" aria-label="Go to homepage">
+        <img src="../logo.svg" alt="Youtalk Logo" />
+      </a>
+
+      <button
+        class="site-header__menu-toggle"
+        type="button"
+        aria-controls="header-menu"
+        aria-expanded="false"
+      >
+        <span aria-hidden="true">☰</span>
+        <span>Settings</span>
+      </button>
+
+      <div class="site-header__panel" id="header-menu">
+        <nav class="site-header__nav nav" aria-label="Main navigation">
+          <a class="nav__link" href="#">О нас</a>
+          <a class="nav__link" href="#">Тарифы</a>
+          <a class="nav__link" href="#">Для бизнеса</a>
+          <a class="nav__link" href="#">Психологам</a>
+          <a class="nav__link" href="#">Сертификат</a>
+
+          <details class="nav__dropdown">
+            <summary class="nav__link nav__link--dropdown">Материалы</summary>
+            <div class="nav__dropdown-menu">
+              <a class="nav__dropdown-link" href="#">Placeholder 1</a>
+              <a class="nav__dropdown-link" href="#">Placeholder 2</a>
+              <a class="nav__dropdown-link" href="#">Placeholder 3</a>
+            </div>
+          </details>
+
+          <a class="nav__link" href="#">FAQ</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a class="button button--primary" href="#">Подобрать психолога</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="main-content">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item" aria-current="page">Блог</li>
+        </ol>
+      </nav>
+
+      <section class="blog">
+        <header class="blog__header">
+          <h1 class="blog__title">Блог</h1>
+
+          <div class="tag-list" aria-label="Blog tags">
+            <button class="tag" type="button" aria-pressed="false">☺️ Все</button>
+            <button class="tag" type="button" aria-pressed="false">Самооценка и самопринятие</button>
+            <button class="tag tag--selected" type="button" aria-pressed="true">🦄 Self</button>
+            <button class="tag" type="button" aria-pressed="false">Чувства и эмоции</button>
+            <button class="tag" type="button" aria-pressed="false">Тревога</button>
+            <button class="tag" type="button" aria-pressed="false">Упражнения</button>
+            <button class="tag" type="button" aria-pressed="false">Психология питания</button>
+            <button class="tag" type="button" aria-pressed="false">Насилие</button>
+            <button class="tag" type="button" aria-pressed="false">Личное здоровье</button>
+          </div>
+        </header>
+
+        <div class="article-grid">
+          <article class="article-card article-card--featured">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_1.png" alt="Eggs"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Самооценка и самопринятие</li>
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+
+              <div class="article-card__content">
+                <h2 class="article-card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                <p class="article-card__author">Автор: Лиза Файнтух</p>
+                <p class="article-card__excerpt">
+                  Изначально термин «эмоциональное профессиональной сфере и относился...
+                </p>
+                <time class="article-card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card article-card--featured">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_2.png" alt="Running"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+
+              <div class="article-card__content">
+                <h2 class="article-card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="article-card__excerpt">
+                  Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...
+                </p>
+                <time class="article-card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_3.png" alt="Sleeping"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Самооценка и самопринятие</li>
+                  <li class="tag article-card__tag">🦄 Психология питания</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                <p class="article-card__author">Автор: Лиза Файнтух</p>
+                <p class="article-card__excerpt">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                <time class="article-card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_4.png" alt="Swimming"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="article-card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                <time class="article-card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_5.png" alt="Angry"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="article-card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                <time class="article-card__date" datetime="2021-08-07">07.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_6.png" alt="Angry"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                <p class="article-card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                <p class="article-card__excerpt">Изначально термин «эмоциональное я...</p>
+                <time class="article-card__date" datetime="2021-08-21">21.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_7.png" alt="Angry"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="article-card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                <time class="article-card__date" datetime="2021-08-11">11.08.2021</time>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="#">
+              <div class="article-card__media">
+                <img class="article-card__image" src="images/article_8.png" alt="Angry"/>
+                <ul class="article-card__tags" aria-label="Article tags">
+                  <li class="tag article-card__tag">🦄 Self</li>
+                </ul>
+              </div>
+              <div class="article-card__content">
+                <h2 class="article-card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
+                <p class="article-card__excerpt">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                <time class="article-card__date" datetime="2021-08-07">07.08.2021</time>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="blog__more">
+          <button class="button button--secondary" type="button">Еще</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container">
+      <div class="site-footer__top">
+        <nav class="site-footer__column site-footer__column--links-left footer-nav" aria-label="Footer navigation one">
+          <a class="footer-nav__link" href="#">О нас</a>
+          <a class="footer-nav__link" href="#">Тарифы</a>
+          <a class="footer-nav__link" href="#">Для бинеса</a>
+          <a class="footer-nav__link" href="#">Психологам</a>
+          <a class="footer-nav__link" href="#">Сертификат</a>
+        </nav>
+
+        <nav class="site-footer__column site-footer__column--links-right footer-nav" aria-label="Footer navigation two">
+          <a class="footer-nav__link" href="#">Блог</a>
+          <a class="footer-nav__link" href="#">Вебинары</a>
+          <a class="footer-nav__link" href="#">Подкаст</a>
+          <a class="footer-nav__link" href="#">Сертификат</a>
+          <a class="footer-nav__link" href="#">Контакты</a>
+        </nav>
+
+        <div class="site-footer__column newsletter">
+          <p class="newsletter__title">Одно письмо в неделю со свежими новостями и акциями</p>
+
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="newsletter-email">Ваш e-mail</label>
+            <input
+              class="newsletter__input"
+              id="newsletter-email"
+              name="email"
+              type="email"
+              placeholder="Ваш e-mail"
+              autocomplete="email"
+            />
+            <button class="newsletter__button" type="submit"></button>
+          </form>
+
+          <p class="newsletter__note">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности.</p>
+        </div>
+
+        <div class="site-footer__column footer-brand">
+          <a class="footer-main__social" href="/" aria-label="Go to homepage">
+            <img class="footer-main__social-logo" src="../sk.svg" alt="Sk" />
+            <p class="footer-main__social-text">Участник</p>
+          </a>
+
+          <div class="footer-brand__socials" aria-label="Social links">
+            <a class="footer-brand__social" href="#" aria-label="VK">
+              <img class="footer-brand__social-logo" src="../vk.svg" alt="VK" />
+            </a>
+            <a class="footer-brand__social" href="#" aria-label="Telegram">
+              <img class="footer-brand__social-logo" src="../telegram.svg" alt="Telegram" />
+            </a>
+            <a class="footer-brand__social" href="#" aria-label="Twitter (X)">
+              <img class="footer-brand__social-logo" src="../twitter.svg" alt="Twitter (X)" />
+            </a>
+            <a class="footer-brand__social footer-brand__social-inverted" href="#" aria-label="Dzen">
+              <img class="footer-brand__social-logo footer-brand__social-expanded" src="../dzen.svg" alt="Dzen" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__divider"></div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__text">©Youtalk, 2018 – 2022</p>
+        <a class="site-footer__text" href="#">Юридические документы</a>
+        <a class="site-footer__text" href="#">Способы оплаты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
