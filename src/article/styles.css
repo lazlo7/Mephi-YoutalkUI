@@ -44,8 +44,6 @@
   --tag-height: 38px;
 }
 
-/* Base */
-
 *,
 *::before,
 *::after {
@@ -119,8 +117,6 @@ img {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;
 }
-
-/* Reusable buttons */
 
 .button {
   display: inline-flex;
@@ -224,8 +220,6 @@ img {
   border-radius: var(--radius-medium);
 }
 
-/* Reusable tags */
-
 .tag {
   display: inline-flex;
   align-items: center;
@@ -249,8 +243,6 @@ img {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(6px);
 }
-
-/* Header */
 
 .site-header {
   position: sticky;
@@ -383,8 +375,6 @@ img {
   background: var(--color-soft);
 }
 
-/* Breadcrumbs */
-
 .article-page {
   padding-block: var(--space-6) var(--space-8);
 }
@@ -413,8 +403,6 @@ img {
 .breadcrumbs__link {
   text-underline-offset: 3px;
 }
-
-/* Main article layout */
 
 .article-layout {
   display: grid;
@@ -459,8 +447,6 @@ img {
   line-height: 1.2;
 }
 
-/* Table of contents */
-
 .toc {
   max-width: 720px;
   margin-bottom: var(--space-7);
@@ -497,8 +483,6 @@ img {
 .toc__link:hover {
   color: var(--color-primary-dark);
 }
-
-/* Quote */
 
 .quote-card {
   position: relative;
@@ -539,8 +523,6 @@ img {
   font-weight: 800;
 }
 
-/* Article lists */
-
 .article-list,
 .marked-list {
   padding: 0;
@@ -568,8 +550,6 @@ img {
   background: var(--color-primary);
 }
 
-/* Figures */
-
 .article-figure {
   margin: var(--space-6) 0;
 }
@@ -589,8 +569,6 @@ img {
   color: #4f5968;
 }
 
-/* Split image/text blocks */
-
 .article-split {
   display: grid;
   grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
@@ -606,8 +584,6 @@ img {
 .article-split__text p:last-child {
   margin-bottom: 0;
 }
-
-/* Exercise cards */
 
 .exercise-card {
   margin: var(--space-6) 0;
@@ -631,8 +607,6 @@ img {
   line-height: var(--line-height-text);
 }
 
-/* Two image + text grid */
-
 .image-text-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -648,8 +622,6 @@ img {
   margin-top: var(--space-3);
   line-height: var(--line-height-text);
 }
-
-/* Decorative broken divider */
 
 .ornament-divider {
   display: flex;
@@ -686,8 +658,6 @@ img {
   display: none;
 }
 
-/* Article tags */
-
 .article-tags {
   display: flex;
   flex-wrap: wrap;
@@ -719,8 +689,6 @@ img {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
-/* Sidebar */
 
 .article-sidebar {
   display: flex;
@@ -871,8 +839,6 @@ img {
   height: 130px;
   border-radius: 50%;
 }
-
-/* Full-width separator and end promo */
 
 .page-divider {
   height: 1px;
@@ -1072,8 +1038,6 @@ img {
   opacity: 0.7;
   margin: 0;
 }
-
-/* Responsive */
 
 @media (max-width: 1100px) {
   .article-layout {
